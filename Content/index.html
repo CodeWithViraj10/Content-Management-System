@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">cms</div>
+    <nav>
+        <a href="/Home/index.html">Home</a>
+        <a href="/About/about.html">About Us</a>
+        <a href="/ContactUs/contact.html" class="active">Contact Us</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+  <div class="container">
+    <h1>Content Management System</h1>
+    <div id="content-list">
+      <!-- Content will be dynamically loaded here -->
+    </div>
+    <h2>Add New Post</h2>
+    <form id="cms-form">
+      <input type="text" id="title" placeholder="Title" required>
+      <textarea id="content" placeholder="Content" required></textarea>
+      <input type="date" id="date" required>
+      <button type="submit">Add Post</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
